@@ -1,2 +1,2 @@
 # honestfinvest.github.io
-Website code for Honest Investment Group.
+Website for Honest Investment Group.
