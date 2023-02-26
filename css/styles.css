@@ -1,7 +1,6 @@
 /* =================================================================== 
- *  Knox Main Stylesheet
+ *  Main Stylesheet
  *  Ver. 1.0.0
- *  03-23-2021
  * ------------------------------------------------------------------
  *
  *  TOC:
@@ -2842,26 +2841,6 @@ img.u-pull-left {
     margin-top: 0;
 }
 
-.text-mid-title {
-    --text-huge: 4.2rem;
-    --text-multiplier: 1;
-    font-family: var(--font-3);
-    font-weight: 400;
-    font-size: calc(var(--text-huge) * var(--text-multiplier));
-    line-height: 1.036;
-    margin-top: 0;
-}
-
-.text-mini-title {
-    --text-huge: 2.2rem;
-    --text-multiplier: 1;
-    font-family: var(--font-3);
-    font-weight: 400;
-    font-size: calc(var(--text-huge) * var(--text-multiplier));
-    line-height: 1.036;
-    margin-top: 0;
-}
-
 /* ------------------------------------------------------------------- 
  * responsive:
  * project-wide shared styles
@@ -2871,7 +2850,7 @@ img.u-pull-left {
         width: 4rem;
     }
 
-    .text-huge-title .text-mid-title .text-mini-title {
+    .text-huge-title {
         --text-multiplier: .857;
     }
 }
@@ -2891,19 +2870,19 @@ img.u-pull-left {
         font-size: calc(var(--text-size) * 1.05);
     }
 
-    .text-huge-title .text-mid-title .text-mini-title {
+    .text-huge-title {
         --text-multiplier: .821;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .text-huge-title .text-mid-title .text-mini-title {
+    .text-huge-title {
         --text-multiplier: .75;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .text-huge-title .text-mid-title .text-mini-title {
+    .text-huge-title {
         --text-multiplier: .679;
     }
 }
@@ -2913,25 +2892,25 @@ img.u-pull-left {
         font-size: var(--text-sm);
     }
 
-    .text-huge-title .text-mid-title .text-mini-title {
+    .text-huge-title {
         --text-multiplier: .643;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .text-huge-title .text-mid-title .text-mini-title {
+    .text-huge-title {
         --text-multiplier: .607;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .text-huge-title .text-mid-title .text-mini-title {
+    .text-huge-title {
         --text-multiplier: .5;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .text-huge-title .text-mid-title .text-mini-title {
+    .text-huge-title {
         --text-multiplier: .464;
     }
 }
@@ -3186,14 +3165,6 @@ img.u-pull-left {
 
 .s-intro__content .text-pretitle,
 .s-intro__content .text-huge-title {
-    color: white;
-}
-
-.s-intro__content .text-mid-title {
-    color: white;
-}
-
-.s-intro__content .text-mini-title {
     color: white;
 }
 
@@ -3567,17 +3538,17 @@ img.u-pull-left {
 }
 
 @media screen and (max-width: 1000px) {
-    .s-intro__content .text-huge-title .text-mid-title .text-mini-title {
+    .s-intro__content .text-huge-title {
         padding-right: calc(var(--gutter) * 4);
     }
 
-    .s-intro__content .text-huge-title .text-mid-title .text-mini-title br {
+    .s-intro__content .text-huge-title br {
         display: none;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .s-intro__content .text-huge-title .text-mid-title .text-mini-title {
+    .s-intro__content .text-huge-title {
         padding-right: 0;
     }
 
@@ -3711,7 +3682,7 @@ img.u-pull-left {
     max-width: 1020px;
 }
 
-.s-details .text-huge-title .text-mid-title .text-mini-title {
+.s-details .text-huge-title {
     margin-bottom: var(--vspace-3_5);
 }
 
@@ -4021,6 +3992,10 @@ img.u-pull-left {
     display: none;
 }
 
+.ss-header1 {
+    text-align: center;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * details
@@ -4075,7 +4050,7 @@ img.u-pull-left {
         padding-bottom: var(--vspace-2);
     }
 
-    .s-details .text-huge-title .text-mid-title .text-mini-title {
+    .s-details .text-huge-title {
         margin-bottom: var(--vspace-2);
     }
 
